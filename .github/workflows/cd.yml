@@ -1,9 +1,8 @@
-name: Python CICD
+name: CD Pipeline
 
 on:
   push:
     branches: [ main ]
-  pull_request:
 
 jobs:
   run-test:
@@ -23,4 +22,3 @@ jobs:
 
       - name: Run tests
         run: pytest
-
